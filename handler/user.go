@@ -156,7 +156,7 @@ func (h *userHandler) UploadAvatar(c *gin.Context) {
 		return
 	}
 
-	data := gin.H{"is_uploaded": false}
+	data := gin.H{"is_uploaded": true}
 	response := helper.APIResponse("Avatar successfuly uploded", http.StatusOK, "success", data)
 
 	c.JSON(http.StatusOK, response)
